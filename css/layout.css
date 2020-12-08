@@ -1,0 +1,88 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    /* fr (fractions) yra likusio plocio trupmenos */
+    /*
+    1) 200px
+    2) 1/2 likusio plocio
+    3) 1/2 likusio plocio
+    */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 200px 600px 200px 1fr;
+    padding: 40px 0;
+    border: 1px solid;
+}
+
+.container > .short {
+/* Islygiavimas ties 3 ir 4 eilute (eilutes nematomos, bet teoriskai reiktu suprasti kad testas issilygiuoja ties 3 ir 4 eilutemis */
+    grid-column: 3/4;
+    background-color: aqua;
+}
+
+.container > .long {
+    grid-column: 2/5;
+    background-color: pink;
+}
+
+/* .container > .long > .left {
+    display: inline-block;
+    width: 50%;
+    float: left;
+    background-color: red;
+        
+}
+.container > .long > .right {
+    display: inline-block;
+    width: 40%;
+    float: right;
+    background-color: violet;
+} */
+
+.container > .long > .left {
+    grid-column: 1/2;
+    background-color: red;
+}
+
+.container > .long > .right {
+    grid-column: 3/4;
+    background-color: pink;
+}
+
+@media (max-width: 1100px) {
+    .container {
+        grid-template-columns: 1fr 100px 600px 100px 1fr;
+    }
+}
+
+@media (max-width: 900px) {
+.container {
+    grid-template-columns: 1fr 600px 1fr;
+    }
+}
+.container > .short {
+/* Islygiavimas ties 3 ir 4 eilute (eilutes nematomos, bet teoriskai reiktu suprasti kad testas issilygiuoja ties 3 ir 4 eilutemis */
+    grid-column: 3/4;
+    background-color: aqua;
+}
+
+.container > .long {
+    grid-column: 2/5;
+    background-color: pink;
+
+@media (max-width: 640px) {
+    .container {
+    grid-template-columns: 20px 1fr 20px;
+    }
+    .container > .short {
+            grid-column: 3/4;
+            background-color: aqua;
+        }
+        
+        .container > .long {
+            grid-column: 2/5;
+            background-color: pink;
+}
