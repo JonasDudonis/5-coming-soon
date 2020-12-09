@@ -14,6 +14,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 200px 600px 200px 1fr;
     padding: 40px 0;
+
     border: solid 1px;
 }
 
@@ -23,6 +24,20 @@ body {
 }
 .container > .row-long {
     grid-column: 2/5;
+
+    border: 1px solid;
+}
+
+.container > .short {
+/* Islygiavimas ties 3 ir 4 eilute (eilutes nematomos, bet teoriskai reiktu suprasti kad testas issilygiuoja ties 3 ir 4 eilutemis */
+    grid-column: 3/4;
+    background-color: aqua;
+}
+
+.container > .long {
+    grid-column: 2/5;
+    background-color: pink;
+
 }
 
 /* .container > .long > .left {
@@ -39,6 +54,7 @@ body {
     background-color: violet;
 } */
 
+
 .container > .row-long.columns {
     display: grid;
     grid-template-columns: 5fr 1fr 4fr;
@@ -52,6 +68,17 @@ body {
         grid-column: 3/4;
     }
 
+.container > .long > .left {
+    grid-column: 1/2;
+    background-color: red;
+}
+
+.container > .long > .right {
+    grid-column: 3/4;
+    background-color: pink;
+}
+
+
 @media (max-width: 1100px) {
     .container {
         grid-template-columns: 1fr 100px 600px 100px 1fr;
@@ -59,6 +86,7 @@ body {
 }
 
 @media (max-width: 900px) {
+
     .container {
         grid-template-columns: 1fr 600px 1fr;
     }
@@ -80,4 +108,31 @@ body {
             .container > .row-long.columns > .right {
                 grid-column: 1/2;
             }
+
+.container {
+    grid-template-columns: 1fr 600px 1fr;
+    }
+}
+.container > .short {
+/* Islygiavimas ties 3 ir 4 eilute (eilutes nematomos, bet teoriskai reiktu suprasti kad testas issilygiuoja ties 3 ir 4 eilutemis */
+    grid-column: 3/4;
+    background-color: aqua;
+}
+
+.container > .long {
+    grid-column: 2/5;
+    background-color: pink;
+
+@media (max-width: 640px) {
+    .container {
+    grid-template-columns: 20px 1fr 20px;
+    }
+    .container > .short {
+            grid-column: 3/4;
+            background-color: aqua;
+        }
+        
+        .container > .long {
+            grid-column: 2/5;
+            background-color: pink;
 }
