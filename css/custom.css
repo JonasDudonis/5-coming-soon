@@ -1,5 +1,20 @@
 /* basic */
 .bg-main-color {
+    background: var(--main-color);
+}
+/* hero */
+.hero.container {
+    padding-bottom: 20px;
+}
+    .hero.container
+
+/* main */
+
+main {
+    color: var(--main-color);
+}
+
+=======
     background: lightblue;
 }
 /* hero */
@@ -8,5 +23,6 @@ div.container {
 }
 
 /* main */
+
 
 /* footer */
