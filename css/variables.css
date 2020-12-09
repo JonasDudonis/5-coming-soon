@@ -3,7 +3,9 @@
     /* kintamieji css'e prasideda dviem --, tarpu tarp bruksniu pavadinime negali buti */
     --gap: 20px;
     --big-gap: calc(2.5 * var(--gap));
-    --main-color:rgb(223, 220, 88) ;
+    --main-color: #FCDED4  ;
+    --secondary-color: rgb(255, 122, 13);
+
 
 
 }

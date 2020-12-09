@@ -14,8 +14,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 200px 600px 200px 1fr;
     padding: 40px 0;
-
-    border: solid 1px;
 }
 
 .container > .row-short {
@@ -24,8 +22,6 @@ body {
 }
 .container > .row-long {
     grid-column: 2/5;
-
-    border: 1px solid;
 }
 
 .container > .short {

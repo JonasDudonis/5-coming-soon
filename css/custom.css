@@ -1,28 +1,71 @@
 /* basic */
 .bg-main-color {
-    background: var(--main-color);
+    background-color: var(--main-color);
 }
+
 /* hero */
 .hero.container {
     padding-bottom: 20px;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center
 }
-    .hero.container
+    .hero > .row-short {
+        text-align: center;
+    }
+        .hero img {
+            height: 110px;
+            margin-bottom: var(--big-gap);
+        }
+        .hero h1 {
+            display: inline-block;
+            width: 100%;
+            color: #000;
+            font-size: 70px;
+            line-height: 60px;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: var(--gap);
+        }
+        .hero p {
+            display: inline-block;
+            width: 100%;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            
+            line-height: 25px;
+            margin-bottom: var(--big-gap);
+        }
+        .hero .clock {
+            margin-bottom: var(--big-gap);
+        }
+        .hero .form {
+            margin-bottom: var(--gap);
+        }
 
 /* main */
-
-main {
-    color: var(--main-color);
+main h2 {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 20px;
 }
-
-=======
-    background: lightblue;
+main p {
+    font-size: 15px;
+    line-height: 23px;
+    color: #666;
+    margin-bottom: 20px;
 }
-/* hero */
-div.container {
-    
-}
-
-/* main */
-
+    main p > a {
+        color: var(--secondary-color);
+        text-decoration: none;
+    }
+        main p > a:hover {
+            text-decoration: underline;
+        }
 
 /* footer */
+footer.container {
+    padding-top: 0;
+}
