@@ -14,7 +14,7 @@
         text-align: center;
     }
         .hero img {
-            height: 110px;
+            height: 150px;
             margin-bottom: var(--big-gap);
         }
         .hero h1 {
@@ -57,7 +57,7 @@ main p {
     color: #666;
     margin-bottom: 20px;
 }
-    main p > a {
+    main p a {
         color: var(--secondary-color);
         text-decoration: none;
     }
@@ -68,4 +68,85 @@ main p {
 /* footer */
 footer.container {
     padding-top: 0;
+    text-align: center;
+
 }
+
+
+footer > .row-long {
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(196, 195, 195);
+    margin-bottom: 20px;
+}
+
+footer .fa {
+    color: rgb(31, 29, 29);
+    font-size: 15x;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    line-height: 36px;
+    /* border-radius: 25%; */
+    text-decoration: none;
+
+}
+
+footer .fa:hover {
+    background-color: #000;
+    color: var(--main-color);
+}
+
+    footer p {
+        display: inline-block;
+        width: 100%;
+        font-size: 17px;
+        line-height: 25px;
+        color: rgba(92, 92, 92, 0.8);
+    }
+
+    footer p a {
+        color: #000;
+        text-decoration: none;
+
+    }
+
+    footer p > span {
+        /* padding: 10px; */
+
+    }
+
+    + elementas reiskia kad stilius pasinaudoja tik nuo antro elemento ir toliau. Jeigu + +, tai nuo 3 ir toliau, ir t.t
+    footer p > span + span {
+        /* border-left: 1px solid; */
+    }
+
+    /* kaip sukurti pagaliukus (pseudo elementas) footer'yje tarp elementu? */
+    footer p > span + span::before {
+        /* border-left: 1px solid; */
+
+        /* Turi buti visi 4 parametrai apacioje ispildyti, kad atsirastu dizaino blokas  - content, display, height, width*/
+
+        content: '';
+        display: inline-block;
+        height: 11px;
+        width: 1px;
+        background-color: rgb(146, 145, 145);
+        margin: 0 10px 0 0
+        /* Rimanto pavyzdys kaip padaryti vertikalius stulpelius
+        top: 50%;
+        left: -2px;
+        position: absolute;
+        transform: translateY(-50%); */
+
+    }
+
+    @media (max-width: 640px) {
+        footer p > span {
+            display: inline-block;
+            width: 100%;
+        }
+            footer p > span + span::before {
+                display: none;
+            }
+    }
