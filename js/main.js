@@ -1,4 +1,4 @@
 import { progressBarData } from './data/progressBarData.js';
-import { renderProgressBar } from "./components/progress-bar/renderProgressBar.js";
+import { renderProgressBar } from "./data/components/progress-bar/renderProgressBar.js";
 
 renderProgressBar('.left', progressBarData);

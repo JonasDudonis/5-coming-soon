@@ -1,5 +1,4 @@
-function isvalidInput(selector, data) {
-    // input validation
+function isValidInput(selector, data) {
     if (typeof selector !== 'string') {
         return false;
     }
@@ -7,12 +6,12 @@ function isvalidInput(selector, data) {
         return false;
     }
     if (selector.length > 100) {
-        return false
+        return false;
     }
-    
+
     if (!Array.isArray(data)) {
         return false;
-    } 
+    }
     if (data.length === 0) {
         return false;
     }
