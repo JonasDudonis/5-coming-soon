@@ -6,7 +6,7 @@
     .clock > .time {
         display: inline-block;
         width: 100%;
-        color: rgb(102, 101, 101);
+        color: rgb(184, 149, 149);
     }
         .clock > .time > .value {
             display: inline-block;
@@ -15,6 +15,8 @@
             line-height: 50px;
             font-family: Arial, Helvetica, sans-serif;
             font-weight: 700;
+            text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+
         }
         .clock > .time > .label {
             display: inline-block;
