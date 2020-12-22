@@ -1,0 +1,19 @@
+.btn {
+    display: inline-block;
+    padding: 8px 20px;
+    line-height: 20px;
+    font-size: 18px;
+    border: none;
+    background-color: var(--secondary-color);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 2px 4px #0006;
+}
+.btn:hover {
+    box-shadow: 0 2px 4px #0009;
+}
+
+.btn.btn-success {
+    background-color: green;
+    color: #fff;
+}
